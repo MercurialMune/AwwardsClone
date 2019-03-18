@@ -7,4 +7,4 @@ from django.contrib.auth.decorators import login_required
 def welcome(request):
     current_user = request.user
 
-    return render(request, 'welcome.html', locals())
+    return render(request, 'index.html', locals())
