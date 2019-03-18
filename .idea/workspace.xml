@@ -2,93 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aead6648-6130-407c-a529-2c86d6c4792a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Procfile.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/awewards/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/awewards/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/awewards/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/awewards/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/awwwards/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/awwwards/wsgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration-3.0.dist-info/INSTALLER" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration-3.0.dist-info/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration-3.0.dist-info/METADATA" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration-3.0.dist-info/RECORD" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration-3.0.dist-info/WHEEL" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration-3.0.dist-info/top_level.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/backends/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/backends/activation/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/backends/activation/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/backends/activation/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/backends/one_step/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/backends/one_step/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/backends/one_step/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/exceptions.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/forms.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/locale/ar/LC_MESSAGES/django.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/locale/ar/LC_MESSAGES/django.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/locale/bg/LC_MESSAGES/django.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/locale/bg/LC_MESSAGES/django.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/locale/ca/LC_MESSAGES/django.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/locale/ca/LC_MESSAGES/django.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/locale/cs/LC_MESSAGES/django.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/locale/cs/LC_MESSAGES/django.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/locale/da/LC_MESSAGES/django.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/locale/da/LC_MESSAGES/django.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/locale/de/LC_MESSAGES/django.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/locale/de/LC_MESSAGES/django.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/locale/el/LC_MESSAGES/django.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/locale/el/LC_MESSAGES/django.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/locale/en/LC_MESSAGES/django.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/locale/en/LC_MESSAGES/django.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/locale/es/LC_MESSAGES/django.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/locale/es/LC_MESSAGES/django.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/locale/es_AR/LC_MESSAGES/django.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/locale/es_AR/LC_MESSAGES/django.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/locale/fa/LC_MESSAGES/django.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/locale/fa/LC_MESSAGES/django.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/locale/fr/LC_MESSAGES/django.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/locale/fr/LC_MESSAGES/django.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/locale/he/LC_MESSAGES/django.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/locale/he/LC_MESSAGES/django.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/locale/hr/LC_MESSAGES/django.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/locale/hr/LC_MESSAGES/django.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/locale/is/LC_MESSAGES/django.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/locale/is/LC_MESSAGES/django.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/locale/it/LC_MESSAGES/django.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/locale/it/LC_MESSAGES/django.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/locale/ja/LC_MESSAGES/django.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/locale/ja/LC_MESSAGES/django.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/locale/ko/LC_MESSAGES/django.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/locale/ko/LC_MESSAGES/django.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/locale/nb/LC_MESSAGES/django.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/locale/nb/LC_MESSAGES/django.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/locale/nl/LC_MESSAGES/django.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/locale/nl/LC_MESSAGES/django.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/locale/pl/LC_MESSAGES/django.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/locale/pl/LC_MESSAGES/django.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/locale/pt/LC_MESSAGES/django.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/locale/pt/LC_MESSAGES/django.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/locale/pt_BR/LC_MESSAGES/django.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/locale/pt_BR/LC_MESSAGES/django.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/locale/ru/LC_MESSAGES/django.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/locale/ru/LC_MESSAGES/django.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/locale/sl/LC_MESSAGES/django.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/locale/sl/LC_MESSAGES/django.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/locale/sr/LC_MESSAGES/django.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/locale/sr/LC_MESSAGES/django.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/locale/sv/LC_MESSAGES/django.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/locale/sv/LC_MESSAGES/django.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/locale/tr_TR/LC_MESSAGES/django.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/locale/tr_TR/LC_MESSAGES/django.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/locale/zh_CN/LC_MESSAGES/django.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/locale/zh_CN/LC_MESSAGES/django.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/locale/zh_TW/LC_MESSAGES/django.mo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/locale/zh_TW/LC_MESSAGES/django.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/signals.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/validators.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtual/lib/python3.6/site-packages/django_registration/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -126,7 +42,7 @@
         <entry file="file://$PROJECT_DIR$/awewards/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="286">
-              <caret line="21" column="130" lean-forward="true" selection-start-line="21" selection-start-column="130" selection-end-line="21" selection-end-column="130" />
+              <caret line="21" column="130" selection-start-line="21" selection-start-column="130" selection-end-line="21" selection-end-column="130" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -134,11 +50,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/awewards/templates/registration/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="11" column="54" lean-forward="true" selection-start-line="11" selection-end-line="12" />
+            <state relative-caret-position="165">
+              <caret line="11" column="54" selection-start-line="11" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Procfile.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -151,15 +76,6 @@
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/runtime.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="12" selection-start-column="12" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -262,15 +178,7 @@
             <path>
               <item name="awe-wards" type="b2602c69:ProjectViewProjectNode" />
               <item name="awe-wards" type="462c0819:PsiDirectoryNode" />
-              <item name="awewards" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="awe-wards" type="b2602c69:ProjectViewProjectNode" />
-              <item name="awe-wards" type="462c0819:PsiDirectoryNode" />
-              <item name="awewards" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="registration" type="462c0819:PsiDirectoryNode" />
+              <item name="awwwards" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -311,7 +219,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15636635" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15636635" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
@@ -461,7 +369,7 @@
     <entry file="file://$PROJECT_DIR$/awewards/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
-          <caret line="21" column="130" lean-forward="true" selection-start-line="21" selection-start-column="130" selection-end-line="21" selection-end-column="130" />
+          <caret line="21" column="130" selection-start-line="21" selection-start-column="130" selection-end-line="21" selection-end-column="130" />
           <folding>
             <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -470,8 +378,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/awewards/templates/registration/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="11" column="54" lean-forward="true" selection-start-line="11" selection-end-line="12" />
+        <state relative-caret-position="165">
+          <caret line="11" column="54" selection-start-line="11" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
