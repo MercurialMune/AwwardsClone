@@ -1,14 +1,13 @@
 import django_heroku
 import dj_database_url
-from decouple import config,Csv
+from decouple import config, Csv
 import os
 
-# Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MODE = config("MODE", default="dev")
 SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default=False)
-# development
+
 if config('MODE') == "prod":
     DATABASES = {
         'default': {
@@ -21,7 +20,7 @@ if config('MODE') == "prod":
         }
 
     }
-# production
+
 else:
     DATABASES = {
         'default': dj_database_url.config(
@@ -33,19 +32,10 @@ DATABASES['default'].update(db_from_env)
 
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'rhnm$@f%i46b6q3lsd+m2!ufani=xj!8ozzb(pi6t152)%%s7j'
-
-# SECURITY WARNING: don't run with debug turned on in production!
-
-
-
-
-# Application definition
-
 INSTALLED_APPS = [
     'awewards',
     'bootstrap3',
+    'crispy_forms',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -53,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 ]
+CRISPY_TEMPLATE_PACK = 'bootstrap3'
 
 MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',
@@ -86,14 +77,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'awwwards.wsgi.application'
 
-
-# Database
-# https://docs.djangoproject.com/en/1.11/ref/settings/#databases
-
-
-# Password validation
-# https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
-
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
@@ -109,7 +92,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'Africa/Nairobi'
@@ -120,10 +102,6 @@ USE_L10N = True
 
 USE_TZ = True
 
-
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/1.11/howto/static-files/
-
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
@@ -133,9 +111,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-# Configure Django App for Heroku.
+LOGIN_REDIRECT_URL = 'home'
 django_heroku.settings(locals())
