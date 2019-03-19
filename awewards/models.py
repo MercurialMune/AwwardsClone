@@ -1,3 +1,4 @@
+import UserProfile as UserProfile
 from django.db import models
 from django.contrib.auth.models import User
 from django.dispatch import receiver
@@ -39,9 +40,6 @@ class Profile(models.Model):
         if created:
             Profile.objects.create(user_id=instance)
 
-    @receiver(post_save, sender=User, dispatch_uid='save_new_user_profile')
-    def save_profile(sender, instance, created, **kwargs):
-        user = instance
-        if created:
-            profile = UserProfile(user=user)
-            profile.save()
+    @receiver(post_save, sender=User)
+    def save_profile(sender, instance, **kwargs):
+        instance.profile.save()
