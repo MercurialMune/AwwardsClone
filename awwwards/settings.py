@@ -18,7 +18,6 @@ if config('MODE') == "prod":
             'HOST': config('DB_HOST'),
             'PORT': '',
         }
-
     }
 
 else:
