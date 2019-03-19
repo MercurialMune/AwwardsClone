@@ -37,7 +37,6 @@ No known errors. However, if found, contact me here
     - Javascript
     
 ## Contributing
-
 Any contributions to this projects will be greatly appreciated. If you want to contribute to it, here are the suggested instructions:
 * Clone this GitHub repository to your local machine.
 
