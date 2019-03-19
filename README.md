@@ -25,7 +25,6 @@
 ## Known bugs
 
 No known errors. However, if found, contact me here 
-
 ## Technologies used
 
     - Python 3.6
