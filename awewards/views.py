@@ -45,5 +45,21 @@ def profile(request):
 
 
 @login_required(login_url='/accounts/login')
+def upload_form(request):
+    current_user = request.user
+    if request.method == 'POST':
+        form = UploadForm(request.POST, request.FILES)
+        if form.is_valid():
+            image = form.save(commit=False)
+            image.uploaded_by  = current_user
+            image.save()
+
+            return redirect('welcome')
+    else:
+        form = UploadForm()
+    return render(request, 'post.html', {'uploadform':form})
+
+
+@login_required(login_url='/accounts/login')
 def logout_view(request):
     logout(request)

@@ -10,6 +10,8 @@ urlpatterns=[
     url(r'accounts/', include('django.contrib.auth.urls')),
     url(r'^home/$',views.home, name='home'),
     url(r'profile/',views.profile, name='profile'),
+    url(r'^post/', views.upload_form, name='post'),
+
 ]
 
 if settings.DEBUG:
