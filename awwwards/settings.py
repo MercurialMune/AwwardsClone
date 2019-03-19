@@ -20,6 +20,7 @@ if config('MODE') == "prod":
         }
     }
 
+
 else:
     DATABASES = {
         'default': dj_database_url.config(
