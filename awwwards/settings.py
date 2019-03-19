@@ -11,7 +11,7 @@ MODE = config("MODE", default="dev")
 SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default=False)
 
-if config('MODE') == "prod":
+if config('MODE') == "dev":
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
