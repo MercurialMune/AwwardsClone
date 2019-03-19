@@ -40,7 +40,7 @@ def profile(request):
         form = UploadForm()
 
         my_projects = Image.objects.all()
-        my_profile = Profile.objects.all()
+        my_profile = Projects.objects.all()
     return render(request, 'profile.html', locals())
 
 
@@ -58,6 +58,22 @@ def upload_form(request):
     else:
         form = UploadForm()
     return render(request, 'post.html', {'uploadform':form})
+
+
+@login_required(login_url='/accounts/login')
+def edit_prof(request):
+    current_user = request.user
+    if request.method == 'POST':
+        form = ProfileForm(request.POST, request.FILES)
+        if form.is_valid():
+            image = form.save(commit=False)
+            image.uploaded_by  = current_user
+            image.save()
+
+            return redirect('welcome')
+    else:
+        form = ProfileForm()
+    return render(request, 'profile_edit.html', {'profileform':form})
 
 
 @login_required(login_url='/accounts/login')
