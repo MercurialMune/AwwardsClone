@@ -6,9 +6,9 @@ from django.conf import settings
 
 
 urlpatterns=[
-    url(r'^$', views.register),
+    url(r'^$', views.register, name='register'),
     url(r'accounts/', include('django.contrib.auth.urls')),
-    url(r'^home/$',views.welcome, name="welcome"),
+    url(r'^home/$',views.home, name='home'),
     url(r'profile/',views.profile, name='profile'),
 ]
 

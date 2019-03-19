@@ -1,5 +1,6 @@
 {%extends "registration/base.html"%}
 {% load bootstrap3 %}
+{% load crispy_forms_tags %}
 {% block content %}
 <div class="w3-container">
   <div class="w3-row">
@@ -10,17 +11,13 @@
           <h3 class="text-center">Sign In</h3>
         </div>
         <div class="panel-body ">
-          <form  action="/accounts/login/" method="post">
+          <form  method="post">
             {% csrf_token %}
-            {% form|crispy%}
+            {{ form|crispy}}
             <div class="form-group">
               <input type="submit" class="w3-button w3-theme-d5" value="Login">
             </div>
-            <input type="hidden" name="next" value="{{next}}">
-              <div class="w3-bar w3-left">
-            <p class=" w3-bar-item w3-center">Don't have an account?</p>
-            <a class="w3-button w3-bar-item w3-center w3-green" href="/accounts/register/">Sign Up</a>
-              </div>
+
           </form>
         </div>
       </div>

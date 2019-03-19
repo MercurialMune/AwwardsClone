@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.views import logout
 from .models import *
 from .forms import *
 
@@ -14,16 +15,16 @@ def register(request):
     else:
         form = UserCreationForm()
 
-    return render(request, 'signup.html', locals())
+    return render(request, 'register.html', locals())
 
 
-def welcome(request):
+def home(request):
     all_projects = Image.objects.all()
 
-    return render(request, 'welcome.html', locals())
+    return render(request, 'index.html', locals())
 
 
-def profile_path(request):
+def profile(request):
     if request.method == 'POST':
         form = UploadForm(request.POST, request.FILES)
 
@@ -36,3 +37,7 @@ def profile_path(request):
         my_projects = Image.objects.all()
         my_profile = Profile.objects.all()
     return render(request, 'profile.html', locals())
+
+
+def logout_view(request):
+    logout(request)
