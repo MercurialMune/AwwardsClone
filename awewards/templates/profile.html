@@ -19,9 +19,15 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       <i class="fa fa-remove"></i>
     </a>
     <h4 class="w3-center"><b >awe-wardz.</b></h4>
-    <span class="w3-center"><img src="http://hddesktopwallpaper.org/wp-content/uploads/2017/01/badass-desktop-wallpaper6.jpg" style="width:45%;" class="w3-round w3-center"></span><br><br>
+    <div class="w3-center"><img src="https://www.yourfirstpatient.com/assets/default-user-avatar-thumbnail-117c4e02d0bee9a424842ebb2a903cf71468999f79ce30bad99c07f100764064.png" style="width:45%;" class="w3-circle w3-center"></div>
 
-    <p class="w3-text-grey w3-center">Username</p>
+    <p class="w3-text-grey w3-center">{{user.username}}</p>
+    {% if user.profile.bio %}
+            <p>{{ user.profile.bio }}</p>
+            {%else%}
+            <P>No user bio for {{user.username}}</P>
+            {% endif %}
+
   </div>
   <div class="w3-bar-block">
     <a href="{%url 'home'%}" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-green"><i class="fa fa-home fa-fw w3-margin-right"></i>Home</a>
@@ -39,7 +45,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
   <!-- Header -->
   <header id="portfolio">
-    <a href="#"><img src="http://hddesktopwallpaper.org/wp-content/uploads/2017/01/badass-desktop-wallpaper6.jpg" style="width:65px;height:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <a href="#"><img src="https://www.yourfirstpatient.com/assets/default-user-avatar-thumbnail-117c4e02d0bee9a424842ebb2a903cf71468999f79ce30bad99c07f100764064.png" style="width:65px;height:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
     <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
 
   </header>

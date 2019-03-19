@@ -19,14 +19,16 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       <i class="fa fa-remove"></i>
     </a>
     <h4 class="w3-center"><b >awe-wardz.</b></h4>
-    <span class="w3-center"><img src="http://hddesktopwallpaper.org/wp-content/uploads/2017/01/badass-desktop-wallpaper6.jpg" style="width:45%;" class="w3-round w3-center"></span><br><br>
 
-    <p class="w3-text-grey w3-center">Username</p>
+    <p class="w3-text-grey w3-center"> Logged in as {{user.username}}
+
   </div>
   <div class="w3-bar-block">
-    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-green"><i class="fa fa-home fa-fw w3-margin-right"></i>Home</a>
-    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>Profile</a>
-    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-sign-out fa-fw w3-margin-right"></i>Logout</a>
+    <div class="w3-bar-block">
+    <a href="{%url 'home'%}" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-green"><i class="fa fa-home fa-fw w3-margin-right"></i>Home</a>
+    <a href="{%url 'profile'%}" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>Profile</a>
+    <a href="/logout" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-sign-out fa-fw w3-margin-right"></i>Logout</a>
+  </div>
   </div>
 
 </nav>
