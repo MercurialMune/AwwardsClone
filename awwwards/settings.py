@@ -1,4 +1,3 @@
-
 import os
 import django_heroku
 import dj_database_url
@@ -9,7 +8,7 @@ MODE = config("MODE", default="dev")
 SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default=False)
 
-if config('MODE') == "dev":
+if config('MODE') == "prod":
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
@@ -34,8 +33,10 @@ DATABASES['default'].update(db_from_env)
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 
 INSTALLED_APPS = [
+    'rest_framework',
     'awewards',
     'bootstrap3',
+    'star_ratings',
     'crispy_forms',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -116,4 +117,5 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 LOGIN_REDIRECT_URL = 'home'
+STAR_RATINGS_RANGE = 10
 django_heroku.settings(locals())

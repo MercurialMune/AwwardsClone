@@ -12,6 +12,7 @@ urlpatterns=[
     url(r'profile/',views.profile, name='profile'),
     url(r'^post/', views.upload_form, name='post'),
     url(r'^edit/', views.edit_prof, name='edit'),
+    url(r'^api/projects/$', views.ProjectsList.as_view())
 
 ]
 
