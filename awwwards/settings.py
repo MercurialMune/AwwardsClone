@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'bootstrap3',
     'star_ratings',
     'crispy_forms',
+    'rest_framework.authtoken',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -46,6 +47,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 ]
 CRISPY_TEMPLATE_PACK = 'bootstrap3'
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.TokenAuthentication',
+    )
+}
 
 MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',

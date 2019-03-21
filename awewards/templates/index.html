@@ -35,6 +35,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
                     class="fa fa-user fa-fw w3-margin-right"></i>Profile</a>
             <a href="/logout" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
                     class="fa fa-sign-out fa-fw w3-margin-right"></i>Logout</a>
+             <form class="w3-bar-item w3-padding" method="get">
+            {{ filter.form.as_p }}
+        <button class="w3-bar-item w3-button w3-padding" type="submit">Search</button>
+  </form>
         </div>
     </div>
 
@@ -62,51 +66,20 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     <div class="w3-row-padding">
         <h4 class="w3-center">All Projects</h4>
         <h5 class="w3-center"><em>How do they rate?</em></h5>
-        <div class="w3-third w3-container w3-margin-bottom">
-            <img src="https://www.kamendekor.cz/wp-content/uploads/2016/03/placeholder-hd.jpg"
-                 alt="Norway" style="width:100%" class="w3-hover-opacity">
-            <div class="w3-container w3-white">
-                <p><b>Lorem Ipsum</b></p>
-                <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies
-                    congue gravida diam non fringilla.</p>
-                <div class="w3-bar w3-row-padding w3-center w3-block">
-                    <a class="w3-bar-item w3-text-yellow w3-margin-right w3-center  w3-margin-bottom w3-button"><i class="fa fa-thumbs-up"></i></a>
-                    <a class="w3-bar-item w3-text-red w3-margin-bottom w3-right w3-button"><i class="fa fa-thumbs-down"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="w3-third w3-container w3-margin-bottom">
-            <img src="https://www.kamendekor.cz/wp-content/uploads/2016/03/placeholder-hd.jpg"
-                 alt="Norway" style="width:100%" class="w3-hover-opacity">
-            <div class="w3-container w3-white">
-                <p><b>Lorem Ipsum</b></p>
-                <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies
-                    congue gravida diam non fringilla.</p>
-                <div class="w3-bar w3-row-padding w3-center w3-block">
-                    <a class="w3-bar-item w3-text-yellow w3-margin-right w3-center  w3-margin-bottom w3-button"><i class="fa fa-thumbs-up"></i></a>
-                    <a class="w3-bar-item w3-text-red w3-margin-bottom w3-right w3-button"><i class="fa fa-thumbs-down"></i></a>
-                </div>
-                <div>
+        {%for project in all_projects%}
+        <div class="w3-third w3-container w3-margin-bottom ">
+            <a href="{%url 'project' project_id=project.id%}"><img src="{{project.project_photo.url}}"
+                 alt="project_photo" style="width:100%" class="w3-hover-opacity" title="Click to view more details"></a>
+            <div class="w3-container w3-white w3-card">
+                <p><b>{{project.project_name}}</b></p>
+                <p>{{project.description}}</p>
+                <div class="w3-center "></div>
 
-                </div>
             </div>
         </div>
-        <div class="w3-third w3-container">
-            <img src="https://www.kamendekor.cz/wp-content/uploads/2016/03/placeholder-hd.jpg"
-                 alt="Norway" style="width:100%" class="w3-hover-opacity">
-            <div class="w3-container w3-white">
-                <p><b>Lorem Ipsum</b></p>
-                <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies
-                    congue gravida diam non fringilla.</p>
-                <div class="w3-bar w3-row-padding w3-center w3-block">
-                    <a class="w3-bar-item w3-text-yellow w3-margin-right w3-center  w3-margin-bottom w3-button"><i class="fa fa-thumbs-up"></i></a>
-                    <a class="w3-bar-item w3-text-red w3-margin-bottom w3-right w3-button"><i class="fa fa-thumbs-down"></i></a>
-                </div>
-                <div>
+        {%endfor%}
 
-                </div>
-            </div>
-        </div>
+
 
 <script type="text/javascript" src="{% static 'star-ratings/js/dist/star-ratings.min.js' %}"></script>
 

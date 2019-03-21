@@ -20,11 +20,17 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       <i class="fa fa-remove"></i>
     </a>
     <h4 class="w3-center"><b >awe-wardz.</b></h4>
-    <div class="w3-center"><img src="https://www.yourfirstpatient.com/assets/default-user-avatar-thumbnail-117c4e02d0bee9a424842ebb2a903cf71468999f79ce30bad99c07f100764064.png" style="width:45%;" class="w3-circle w3-center"></div>
+    <div class="w3-center">
+        {% if not my_profile_photo %}
+        <img src="https://www.yourfirstpatient.com/assets/default-user-avatar-thumbnail-117c4e02d0bee9a424842ebb2a903cf71468999f79ce30bad99c07f100764064.png" style="width:45%;" class="w3-circle w3-center">
+        {%else%}
+        <img src="{{my_profile_photo}}" style="width:45%;" class="w3-circle w3-center">
+        {% endif %}
+    </div>
 
     <p class="w3-text-grey w3-center">{{user.username}}</p>
-    {% if user.profile.bio %}
-            <p>{{ user.profile.bio }}</p>
+    {% if my_profile.bio %}
+            <p>{{ my_profile.bio }}</p>
             {%else%}
             <P>No user bio for {{user.username}}</P>
             {% endif %}
@@ -59,15 +65,20 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
 
   <div class="w3-row-padding">
-    <h4 class="w3-center">My Projects</h4>
+    <h5 class="w3-center">My Projects</h5>
     <div class="w3-center"><a class="w3-button w3-round w3-green" href="{%url 'post'%}"><b>+ </b>Add a Project</a></div><br>
-    <div class="w3-third w3-container w3-margin-bottom">
-      <img src="https://www.kamendekor.cz/wp-content/uploads/2016/03/placeholder-hd.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      </div>
-    </div>
+    {%for project in my_projects%}
+        <div class="w3-third w3-container w3-margin-bottom ">
+            <img src="{{project.project_photo.url}}"
+                 alt="project_photo" style="width:100%" class="w3-hover-opacity" >
+            <div class="w3-container w3-white w3-card">
+                <p><b>{{project.project_name}}</b></p>
+                <p>{{project.description}}</p>
+                <div class="w3-center "></div>
+
+            </div>
+        </div>
+        {%endfor%}
 
   </div>
 
