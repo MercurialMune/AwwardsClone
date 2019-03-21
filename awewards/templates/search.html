@@ -55,42 +55,35 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     </header>
     <!-- First Photo Grid-->
 
-    <div class="w3-row-padding">
-        <h4 >{{project.project_name}}</h4>
 
-        <div class="w3-container w3-col l6 w3-margin-bottom ">
-            <img src="{{project.project_photo.url}}"
-                 alt="project_photo" style="width:100%" class="w3-card-4">
+        <div class="w3-row-padding">
+            <br>
+            <h4 class="w3-center">Search Results</h4>
+            {%if result%}
+           {%for project in result%}
+        <div class="w3-half w3-container w3-margin-bottom ">
+            <a href="{%url 'project' project_id=project.id%}"><img src="{{project.project_photo.url}}"
+                 alt="project_photo" style="width:100%" class="w3-hover-opacity" title="Click to view more details"></a>
+            <div class="w3-container w3-white w3-card">
+                <p><b>{{project.project_name}}</b></p>
+                <p>{{project.description}}</p>
+                <div class="w3-center "></div>
+            </div>
         </div>
-        <div class="w3-container w3-col l6 w3-padding w3-margin-bottom">
-            <h5 class="w3-center">Project Details</h5>
-            <p>Name: {{project.project_name}}</p>
-            <p>Description: {{project.description}}</p>
-           <br>
-           <a href="{{project.url}}"><i class="fa fa-lg w3-text-green fa-globe"> visit</i></a>
+            {%endfor%}
+            {%else%}
+        <div class="w3-display-container" style="margin-top:20%">
+            <div class="w3-display-middle">
 
+        <p class="w3-center"><i class="fa fa-frown-o" style="font-size:96px"></i></p><br>
+                <p class="w3-center">Nothing found here</p>
             </div>
-        <div class="w3-row-padding ">
-        <div class="">
-            <h5 class="w3-center w3-padding">How does {{project.project_name}} rate?</h5>
-            <div class="w3-col w3-center l4 w3-padding ">
-            <p><em>Design</em></p>
-            <span>{% ratings project icon_height=20 icon_width=20%}</span>
-            </div>
-            <div class="w3-col w3-center l4 w3-padding">
-            <p><em>Usability</em></p>
-            <span>{% ratings project icon_height=20 icon_width=20%}</span>
-            </div>
-            <div class="w3-col w3-center w3-padding l4 ">
-            <p><em>Content</em></p>
-            <span>{% ratings project icon_height=20 icon_width=20%}</span>
-            </div>
-            <br> <br> <br>
-
         </div>
+        {%endif%}
         </div>
 
-</div>
+
+
 
 
 

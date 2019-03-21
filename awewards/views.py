@@ -1,9 +1,7 @@
 from django.shortcuts import render, redirect
-from .filters import ProjectFilter
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.views import logout
 from django.contrib.auth.decorators import login_required
-from .models import *
 from .forms import *
 from django.http import Http404
 
@@ -11,13 +9,11 @@ from django.http import Http404
 def register(request):
     if request.method == 'POST':
         form = UserCreationForm(request.POST)
-
         if form.is_valid():
             form.save()
         return redirect('login')
     else:
         form = UserCreationForm()
-
     return render(request, 'register.html', locals())
 
 
@@ -25,17 +21,16 @@ def register(request):
 def home(request):
     current_user = request.user
     all_projects = Projects.objects.all()
-
     return render(request, 'index.html', locals())
 
 
 @login_required(login_url='/accounts/login')
-def project(request,project_id):
+def project(request, project_id):
     try:
-        project = Projects.objects.get(id = project_id)
+        project = Projects.objects.get(id=project_id)
     except Projects.DoesNotExist:
         raise Http404()
-    return render(request,"project.html", locals())
+    return render(request, "project.html", locals())
 
 
 @login_required(login_url='/accounts/login')
@@ -62,7 +57,6 @@ def upload_form(request):
             image = form.save(commit=False)
             image.uploaded_by = current_user
             image.save()
-
             return redirect('home')
     else:
         form = UploadForm()
@@ -78,7 +72,6 @@ def edit_prof(request):
             lol = form.save(commit=False)
             lol.uploaded_by = current_user
             lol.save()
-
             return redirect('profile')
     else:
         form = ProfileForm()
@@ -88,8 +81,9 @@ def edit_prof(request):
 @login_required(login_url='/accounts/login')
 def search(request):
     all_projects = Projects.objects.all()
-    searched_project = ProjectFilter(request.GET, queryset=all_projects)
-    return render(request, 'search.html', {'filter': searched_project})
+    parameter = request.GET.get("project")
+    result = Projects.objects.filter(project_name__icontains=parameter)
+    return render(request, 'search.html', locals())
 
 
 @login_required(login_url='/accounts/login')
